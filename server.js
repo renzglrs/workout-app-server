@@ -30,11 +30,6 @@ mongoose.connect(process.env.MONGO_URI)
         console.log(error);
     });
 
-if (require.main === module) {
-  // "process.env.PORT || port" will use the environment variable if it is available OR will use port 4000 if none is defined
-  app.listen(process.env.PORT || 4000, () => {
-    console.log(`API is now online on port ${port}`);
-  });
-}
+
 
 
